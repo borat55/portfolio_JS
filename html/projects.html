@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/06ad75dee2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Projects</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <ul class="nav-manu">
+        <li>
+          <a href="../index.html">
+            <img src="../img/logo boram.jpg" alt="boram kim Logo" />
+          </a>
+        </li>
+        <div class="visibleMenu">
+          <li><a href="/index.html">Home</a></li>
+          <li class="nav-about"><a href="about.html">About</a></li>
+          <li><a href="projects.html" id="projectColor">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </div>
+        <li>
+          <a href="#" class="nav_menuBtn" id="navBtn">
+            <i class="fas fa-bars"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <h3 class="project-guide" id="projectGuide">
+      Please click a name of project below to explore more.
+    </h3>
+    <ul class="project-option">
+      <li id="coinBtn"><a id="coinBtnColor" href="#">Coin Tracker</a></li>
+      <li id="chromeBtn">
+        <a id="chromeBtnColor" href="#">Chrome App Clone Coding</a>
+      </li>
+      <li id="netflexBtn">
+        <a id="netflexBtnColor" href="#">Netflex Clone Coding</a>
+      </li>
+    </ul>
+
+    <main class="project">
+      <div class="main-coin-tracker" id="coinTracker">
+        <div class="project-img-box">
+          <img
+            class="coin-tracker-img"
+            src="../img/coin-tracker.jpg"
+            alt="Coin_Tracker_Image"
+          />
+        </div>
+        <div class="project-info">
+          <title>Coin Tracker</title>
+          <p>
+            It shows the information of cryptocurrency. If a name of the
+            cryptocurrency is clicked, the page will be shown all about the
+            cryptocurrency by explaining about the coin, comparing the price of
+            coin, and visualizing the price per each time or day in line
+            chart/candle stick chart. It fetches data from cryptocurrency API by
+            using React Query, and presents the information in real time in the
+            page. The light and dark mode is built with Styled Components and
+            Recoil. The charts are built with Apex Chart.
+          </p>
+
+          <div class="lang-icons">
+            <img
+              class="react-icon badge"
+              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            />
+            <img
+              class="styledComponents-icon badge"
+              src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
+            />
+            <img
+              class="reactRouter-icon badge"
+              src="https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white"
+            />
+            <img
+              class="reactQuery-icon badge"
+              src="https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white"
+            />
+            <img
+              class="typescript-icon badge"
+              src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+            />
+          </div>
+
+          <div class="projectBtn-box">
+            <button>
+              <a href="https://borat55.github.io/coin-tracker/" target="_blank"
+                >View Project</a
+              >
+            </button>
+            <button>
+              <a href="https://github.com/borat55/coin-tracker" target="_blank"
+                >View Code</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-chrome-app-clone-coding" id="chromeClone">
+        <div class="project-img-box">
+          <img
+            class="chrome-app-img"
+            src="../img/chrome-app-clone.jpg"
+            alt="Chrome_App_Clone_Coding_Image"
+          />
+        </div>
+        <div class="project-info">
+          <title>Chrome App Clone Coding</title>
+          <p>
+            Chrome App that has a to-do list, date/time, weather forecast and
+            quote for the day. In the to-do list, there are 3 categories; to-do,
+            doing, done. A to-do item can be mosed to other categories from the
+            default value, to-do, according to the status of the to-do item. For
+            the weather forecast, if a name of city is entered correctly, it
+            shows the weather information of the city. For the Todo list, React
+            Hook Form is used to validate forms, and Recoil to change / manage
+            the status of components. The weather information is pulled from
+            Openweathermap, quote is receiving from Adviceslip.
+          </p>
+
+          <div class="lang-icons">
+            <img
+              class="react-icon badge"
+              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            />
+            <img
+              class="styledComponents-icon badge"
+              src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
+            />
+            <img
+              class="typescript-icon badge"
+              src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+            />
+            <img
+              class="reactHookForm-icon badge"
+              src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white"
+            />
+          </div>
+
+          <div class="projectBtn-box">
+            <button>
+              <a
+                href="https://borat55.github.io/chrome-app-clone/"
+                target="_blank"
+                >View Project</a
+              >
+            </button>
+            <button>
+              <a
+                href="https://github.com/borat55/chrome-app-clone"
+                target="_blank"
+                >View Code</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-netflex" id="netflexClone">
+        <div class="project-img-box">
+          <img
+            class="netflex-img"
+            src="../img/netflex home.jpg"
+            alt="netflex_Clone_Coding_Image"
+          />
+        </div>
+        <div class="project-info">
+          <title>netflex Clone Coding</title>
+          <p>
+            A clone website of Netflix, providing a similar user experience and
+            functionality. It allows users to browse and discover information on
+            movies and TV shows, just like the original Netflix platform. The
+            application utilizes data pulled from the Movie Database (TMDB) API
+            to populate its content.<br />
+            - Information on movies/tv series pulled from Movie Database(TMDB)
+            API<br />
+            - Users can easily search for specific movies or TV shows and
+            explore various categories such as Now Playing, Popular, Top
+            Rated<br />
+            - Incorporated engaging animations and interactive features like
+            sliders and modals using Framer Motion<br />
+          </p>
+
+          <div class="lang-icons">
+            <img
+              class="react-icon badge"
+              src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB"
+            />
+            <img
+              class="reactQuery-icon badge"
+              src="https://img.shields.io/badge/-React%20Query-FF4154?style=for-the-badge&logo=react%20query&logoColor=white"
+            />
+            <img
+              class="styledComponents-icon badge"
+              src="https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white"
+            />
+            <img
+              class="typescript-icon badge"
+              src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white"
+            />
+            <img
+              class="reactHookForm-icon badge"
+              src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=for-the-badge&logo=reacthookform&logoColor=white"
+            />
+          </div>
+
+          <div class="projectBtn-box">
+            <button>
+              <a href="" target="_blank">View Project</a>
+            </button>
+            <button>
+              <a href="https://github.com/borat55/react-netflex" target="_blank"
+                >View Code</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="../js/projects.js"></script>
+  <script src="../js/nav.js"></script>
+</html>
