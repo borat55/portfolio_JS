@@ -1,17 +1,21 @@
-const dots = document.getElementById("dots");
-const moreText = document.getElementById("more");
-const readMoreBtn = document.getElementById("readMoreBtn");
+let typingBool = false;
+let typingIndex = 0;
+let typingInt;
 
-function handleReadMoreBtn() {
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    readMoreBtn.innerHTML = "Read More";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    readMoreBtn.innerHTML = "Read Less";
-    moreText.style.display = "inline";
-  }
+const Text = document.getElementById("typing-text");
+const typing = document.getElementById("typing");
+const typingText = Text.innerText.split("");
+
+if (typingBool == false) {
+  typingBool = true;
+  typingInt = setInterval(typingHandler, 50);
 }
 
-readMoreBtn.addEventListener("click", handleReadMoreBtn);
+function typingHandler() {
+  if (typingIndex < typingText.length) {
+    typing.append(typingText[typingIndex]);
+    typingIndex++;
+  } else {
+    clearInterval(typingInt);
+  }
+}
