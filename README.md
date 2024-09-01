@@ -1,9 +1,15 @@
-# 📜 A simple webpage introducing about myself
+# 📜 About myself
+
+- Web
 
 ![portfolio_JS](https://github.com/borat55/portfolio_JS/assets/86196159/e6b124bb-ea77-4cd2-9477-5061ed7f1d97)
 
+
+- Mobile
+
 ![portfolio_JS_mobile](https://github.com/borat55/portfolio_JS/assets/86196159/03795396-e978-4e4e-8d78-5540b954a983)
 
+https://borat55.github.io/portfolio_JS/
 
 ## Table of contents
 
